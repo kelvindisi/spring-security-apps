@@ -6,6 +6,9 @@
     <packaging>pom</packaging>
     <name>spring-security</name>
     <url>https://devkiu.com</url>
+    <modules>
+        <module>amigoscode-authentication</module>
+    </modules>
 
     <groupId>com.devkiu</groupId>
     <artifactId>spring-security</artifactId>
