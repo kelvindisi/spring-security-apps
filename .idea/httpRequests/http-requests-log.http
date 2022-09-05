@@ -1,0 +1,84 @@
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+  "firstName": "Angela",
+  "lastName": "Mwende",
+  "email": "angelamwende@gmail.com",
+  "password": "password"
+}
+
+<> 2022-09-04T224229.201.txt
+
+###
+
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+  "firstName": "Angela",
+  "lastName": "Mwende",
+  "email": "angelamwende@gmail.com",
+  "password": "password"
+}
+
+<> 2022-09-04T223845.201.txt
+
+###
+
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+  "firstName": "Abigail",
+  "lastName": "Wavinya",
+  "email": "abigail@gmail.com",
+  "password": "password"
+}
+
+<> 2022-09-03T230849.201.txt
+
+###
+
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+  "firstName": "Kelvin",
+  "lastName": "Ndisi",
+  "email": "kelvindisi@gmail.com",
+  "password": "password"
+}
+
+<> 2022-09-03T230743.201.txt
+
+###
+
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+  "firstName": "Kelvin",
+  "lastName": "Ndisi",
+  "email": "kelvindisi@gmail.com",
+  "password": "password"
+}
+
+<> 2022-09-03T174431.201.txt
+
+###
+
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+  "firstName": "Kelvin",
+  "lastName": "Ndisi",
+  "email": "kelvindisi@gmail.com",
+  "password": "password"
+}
+
+<> 2022-09-03T174014.201.txt
+
+###
+
