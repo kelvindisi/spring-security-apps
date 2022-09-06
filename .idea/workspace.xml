@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d822b95-5089-4c49-9fcf-ba17b09cce3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/config/ApplicationSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/student/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/student/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/config/PasswordConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amigoscode-authentication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/amigoscode-authentication/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/config/ApplicationSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/config/ApplicationSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,38 +98,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AmigosApplication">
-    <configuration name="VerificationTokenRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-security-client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devkiu.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devkiu.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.devkiu.repository.VerificationTokenRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VerificationTokenRepositoryTest.findVerificationTokenByToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-security-client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devkiu.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devkiu.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.devkiu.repository.VerificationTokenRepositoryTest" />
-      <option name="METHOD_NAME" value="findVerificationTokenByToken" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="AmigosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="amigoscode-authentication" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.devkiu.AmigosApplication" />
@@ -145,18 +112,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="spring-security-client" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.devkiu.ClientApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AmigosApplication" />
-        <item itemvalue="JUnit.VerificationTokenRepositoryTest" />
-        <item itemvalue="JUnit.VerificationTokenRepositoryTest.findVerificationTokenByToken" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +129,7 @@
       <workItem from="1662137907622" duration="4343000" />
       <workItem from="1662200706065" duration="24877000" />
       <workItem from="1662384094267" duration="44000" />
-      <workItem from="1662384167370" duration="2971000" />
+      <workItem from="1662384167370" duration="8105000" />
     </task>
     <servers />
   </component>
