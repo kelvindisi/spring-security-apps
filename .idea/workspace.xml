@@ -7,7 +7,6 @@
     <list default="true" id="2d822b95-5089-4c49-9fcf-ba17b09cce3a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/security/ApplicationSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/security/ApplicationSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amigoscode-authentication/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +131,7 @@
       <workItem from="1662200706065" duration="24877000" />
       <workItem from="1662384094267" duration="44000" />
       <workItem from="1662384167370" duration="16709000" />
-      <workItem from="1662545397998" duration="10162000" />
+      <workItem from="1662545397998" duration="11005000" />
     </task>
     <servers />
   </component>
