@@ -13,6 +13,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+import java.util.concurrent.TimeUnit;
+
 import static com.devkiu.security.ApplicationUserRole.*;
 
 @Configuration
@@ -38,6 +40,17 @@ public class ApplicationSecurityConfig {
                 .formLogin()
                 .loginPage("/login")
                 .defaultSuccessUrl("/courses")
+                .and()
+                .rememberMe()
+                .tokenValiditySeconds(((int) TimeUnit.DAYS.toSeconds(2L)))
+                .key("KLJAKLFJIE3434JFK")
+                .and()
+                .logout()
+                .logoutUrl("/logout")
+                .clearAuthentication(true)
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESSIONID", "remember-me")
+                .logoutSuccessUrl("/login")
                 .and().build();
     }
 
