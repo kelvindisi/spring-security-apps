@@ -1,4 +1,4 @@
-package com.devkiu.config;
+package com.devkiu.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

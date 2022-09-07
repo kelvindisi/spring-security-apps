@@ -1,8 +1,8 @@
-package com.devkiu.config;
+package com.devkiu.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -13,8 +13,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+import static com.devkiu.security.ApplicationUserRole.*;
+
 @Configuration
 @EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class ApplicationSecurityConfig {
     private final PasswordEncoder passwordEncoder;
 
@@ -26,25 +29,43 @@ public class ApplicationSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
                 .csrf(AbstractHttpConfigurer::disable)
-                .cors(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(request-> {
-                    request.antMatchers("/").permitAll();
+                .authorizeHttpRequests(auth->{
+                    auth.antMatchers("/login").permitAll();
                 })
                 .authorizeHttpRequests()
                 .anyRequest().authenticated()
                 .and()
-                .httpBasic(Customizer.withDefaults())
-                .build();
+                .formLogin()
+                .loginPage("/login")
+                .defaultSuccessUrl("/courses")
+                .and().build();
     }
 
     @Bean
     public UserDetailsService userDetailsService() {
         UserDetails student = User.builder()
+                .username("student")
+                .password(passwordEncoder.encode("password"))
+//                .roles("STUDENT")
+                .authorities(STUDENT.getGrantedAuthority())
+                .build();
+        UserDetails admin = User.builder()
                 .username("kelvindisi")
                 .password(passwordEncoder.encode("password"))
-                .roles("STUDENT")
+//                .roles("ADMIN")
+                .authorities(ADMIN.getGrantedAuthority())
+                .build();
+        UserDetails admin_trainee = User.builder()
+                .username("trainee")
+                .password(passwordEncoder.encode("password"))
+//                .roles("ADMIN_TRAINEE")
+                .authorities(ADMIN_TRAINEE.getGrantedAuthority())
                 .build();
 
-        return new InMemoryUserDetailsManager(student);
+        return new InMemoryUserDetailsManager(
+                admin,
+                admin_trainee,
+                student
+        );
     }
 }

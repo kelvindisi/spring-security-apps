@@ -1,5 +1,6 @@
 package com.devkiu.student;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,7 @@ public class StudentController {
             new Student(3, "Angela Mwende")
     );
 
+    @PreAuthorize("hasAnyAuthority('student:read')")
     @GetMapping("/{studentId}")
     public Student getStudent(@PathVariable Integer studentId) {
       return students.stream().filter(student -> Objects.equals(student.getStudentId(), studentId))
