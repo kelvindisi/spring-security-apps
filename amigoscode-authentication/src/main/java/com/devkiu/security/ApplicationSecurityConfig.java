@@ -32,10 +32,8 @@ public class ApplicationSecurityConfig {
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth->{
                     auth.antMatchers("/login").permitAll();
+                    auth.anyRequest().authenticated();
                 })
-                .authorizeHttpRequests()
-                .anyRequest().authenticated()
-                .and()
                 .formLogin()
                     .loginPage("/login")
                     .usernameParameter("username")
