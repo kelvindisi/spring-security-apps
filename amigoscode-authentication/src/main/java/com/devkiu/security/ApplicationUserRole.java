@@ -5,6 +5,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -33,10 +34,10 @@ public enum ApplicationUserRole {
         this.permissions = permissions;
     }
 
-    public Set<? extends GrantedAuthority> getGrantedAuthority() {
-        Set<GrantedAuthority> authorities = permissions.stream()
+    public List<? extends GrantedAuthority> getGrantedAuthority() {
+        List<GrantedAuthority> authorities = permissions.stream()
                 .map(permission-> new SimpleGrantedAuthority(permission.getPermission()))
-                        .collect(Collectors.toSet());
+                        .collect(Collectors.toList());
         authorities.add(new SimpleGrantedAuthority("ROLE_" + this.name()));
         return authorities;
     }

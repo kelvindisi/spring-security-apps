@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d822b95-5089-4c49-9fcf-ba17b09cce3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/auth/ApplicationUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/auth/ApplicationUserDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/auth/ApplicationUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/auth/CustomAuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/auth/TestApplicationUserDetailsRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/security/ApplicationSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/security/ApplicationSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/security/ApplicationUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/security/ApplicationUserRole.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -131,7 +137,7 @@
       <workItem from="1662200706065" duration="24877000" />
       <workItem from="1662384094267" duration="44000" />
       <workItem from="1662384167370" duration="16709000" />
-      <workItem from="1662545397998" duration="11005000" />
+      <workItem from="1662545397998" duration="17932000" />
     </task>
     <servers />
   </component>
@@ -161,5 +167,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/amigoscode-authentication/src/main/java/com/devkiu/auth/TestApplicationUserDetailsRepository.java</url>
+          <line>20</line>
+          <properties class="com.devkiu.auth.TestApplicationUserDetailsRepository" method="getUserDetailsByUsername">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
